@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>layout</title>
+		<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		
+		<script src="owlcarousel/owl.carousel.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container-fluid px-0">
+				<div class="container">
+					<div class="row justify-content-between no-gutters flex-nowrap header-first-line">
+						<nav class="navbar navbar-expand-lg navbar-light col-2 col-mg-auto">
+					
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavHeader" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					  		<span class="navbar-toggler-icon"></span>
+						</button>
+	
+						<div class="collapse navbar-collapse" id="navbarNavHeader">
+					  		<ul class="navbar-nav text-nowrap">
+								<li class="nav-item">
+						  			<a class="nav-link" href="#">Доставка и оплата</a>
+								</li>
+								<li class="nav-item">
+						  			<a class="nav-link" href="#">Сервис и гарантия</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Программа лояльности</a>
+						  		</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">О нас</a>
+						  		</li>
+								<li class="nav-item">
+						 			 <a class="nav-link" href="#">Контакты</a>
+								</li>
+					  		</ul>
+						</div>
+						</nav>
+				  	
+						<ul class="nav justify-content-end align-self-center no-gutters flex-nowrap add_user_sign_in">
+							<li class="nav-item col sign_in">
+								<a class="nav-link" href="#">Вход</a>
+							</li>
+							<li class="nav-item col offset-1 add_user">
+								<a class="nav-link" href="#">Региcтрация</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="container header-second-line">
+			<div class="row no-gutters header-wrap">
+				<a href="#"><img src="pictures/logo.png" class="img-fluid" width="229px" height="54px" alt="Логотип компании Мастер"></a>
+				
+				<ul class="nav justify-content-end align-self-center no-gutters col-auto flex-nowrap bookmarks_cart">
+					<li class="nav-item col bookmarks position-relative">
+						<a class="nav-link" href="#">Закладки</a>
+					</li> 
+					<li class="nav-item col offset-1 cart position-relative">
+						<a class="nav-link" href="#"><span class="badge position-absolute">0</span>Корзина</a>
+					</li>
+				</ul>
+
+			</div>
+			</div>
+			
+			
+			<div class="container mb-3">
+			<div class="row align-items-center ">
+
+				
+
+				<div class="dropdown dropdownHeader order-2 col-6">
+					<a class="dropdown-toggle" role="button" id="dropdownMenuHeader" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Каталог товаров
+					</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuHeader">
+						<a class="dropdown-item" href="#">Маникюрные педикюрные принадлежности</a>
+						<a class="dropdown-item" href="#">Гель-лаки и наращивание ногтей</a>
+						<a class="dropdown-item" href="#">Парикмахерские инструменты и техника</a>
+						<a class="dropdown-item" href="#">Восковая депиляция и парафинотерапия</a>
+						<a class="dropdown-item" href="#">Наращивание ресниц, краска для бровей и ресниц</a>
+						<a class="dropdown-item" href="#">Спецодежда и одноразовые принадлежности</a>
+						<a class="dropdown-item" href="#">Оборудование для салонов</a>
+						<a class="dropdown-item" href="#">Стерилизация инструментов</a>
+					</div>
+				</div>
+		
+	
+
+				<form class="form-inline order-1 col-12 col-md-5 col-lg-7 ml-md-auto mt-3 position-relative headerForm">
+					<input class="form-control py-0 col-12 inputSearch" type="search" placeholder="" aria-label="Search">
+					<button class="btn btn-outline-success my-0 py-0 px-0 position-absolute buttonSearch" type="submit"> </button>
+				</form>
+
+				<div class="col-6 col-md-3 col-lg-2 order-3 text-right contacts">
+					<p><a href="#">+38 (096) 569 93 22</a></p>
+					<p><a href="#">+38 (096) 569 93 22</a></p>
+				</div>
+				</div>
+			</div>
+			
+		</header>
+
+
+
+		<section class="container-fluid px-0 carousel position-relative">
+			<div class="container px-0 position-absolute dropdown_container">
+
+				<div class="dropdown show dropdownCarousel position-absolute">
+					<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Каталог товаров
+					</a>
+				  
+					<div class="dropdown-menu dropdownCarouselMenu" aria-labelledby="dropdownMenuLink">
+						<a class="dropdown-item" href="#">Маникюрные педикюрные принадлежности</a>
+						<a class="dropdown-item" href="#">Гель-лаки и наращивание ногтей</a>
+						<a class="dropdown-item" href="#">Парикмахерские инструменты и техника</a>
+						<a class="dropdown-item" href="#">Восковая депиляция и парафинотерапия</a>
+						<a class="dropdown-item" href="#">Наращивание ресниц, краска для бровей и ресниц</a>
+						<a class="dropdown-item" href="#">Спецодежда и одноразовые принадлежности</a>
+						<a class="dropdown-item" href="#">Оборудование для салонов</a>
+						<a class="dropdown-item" href="#">Стерилизация инструментов</a>
+					</div>
+				  </div>
+
+			
+
+			</div>
+			<div class="owl-carousel owl-theme owl-main position-relative">
+				<div class="item position-relative item_carousel">
+					<img src="pictures/carousel1.png" class="img-fluid position-absolute" width="100%" height="auto" alt="">
+					<div class="container content_carousel position-relative">
+						<p class="text-uppercase text-right ml-auto mr-0 align-self-center col-7 col-md-4 my-0">все для салонов красоты</p>
+					</div>
+				</div>
+				<div class="item position-relative item_carousel">
+					<img src="pictures/carousel1.png" class="img-fluid position-absolute" width="100%" height="auto" alt="">
+					<div class="container content_carousel position-relative">
+						<p class="text-uppercase text-right ml-auto mr-0 align-self-center col-7 col-md-4 my-0">Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+				<div class="item position-relative item_carousel">
+					<img src="pictures/carousel1.png" class="img-fluid position-absolute" width="100%" height="auto" alt="">
+					<div class="container content_carousel position-relative">
+						<p class="text-uppercase text-right ml-auto mr-0 align-self-center col-7 col-md-4 my-0">Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+				<div class="item position-relative item_carousel">
+					<img src="pictures/carousel1.png" class="img-fluid position-absolute" width="100%" height="auto" alt="">
+					<div class="container content_carousel position-relative">
+						<p class="text-uppercase text-right ml-auto mr-0 align-self-center col-7 col-md-4 my-0">Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	
+
+		<section class="container">
+			<div class="row advantages justify-content-between text-right">
+				<div class="col-12 col-md-6 col-lg my-2 advantages_content pl-lg-0">
+					<div class="col advantages_content1"><span>Гарантия Качества</span>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia veniam aperiam, repudiandae aliquam labore quibusdam neque harum.</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg my-2 advantages_content">
+					<div class="col advantages_content2"><span>Гарантия сервиса</span>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia veniam aperiam, repudiandae aliquam labore quibusdam neque harum.</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg my-2 advantages_content pr-lg-0">
+					<div class="col advantages_content3"><span>Гарантия успеха</span>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia veniam aperiam, repudiandae aliquam labore quibusdam neque harum.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="container">
+				<div class="row justify-content-lg-between banners">
+				<div class="col-12 col-md-7">
+					<div class="banner1_content">
+						<span class="text-uppercase">акционное предложение</span>
+						<p>Товары недели</p>
+					</div>
+					<a href="#"><img src="pictures/banner1.png" height="260px" width="100%" class="img-fluid" alt=""></a>
+				</div>
+				<div class="col-12 col-md-5">
+					<div class="banner2_content text-right text-uppercase text-align-middle">
+						<span class="discount">50%</span> скидки на всю косметику фирмы <span class="font-weight-bold">Spa</span>	
+					</div>
+					<a href="#"><img src="pictures/banner2.png" height="260px" width="100%" class="img-fluid my-2 my-md-0" alt=""></a>
+				</div>
+				</div>
+		</section>
+	
+		<section>
+			<div class="container text-center container_hits">
+				<span class="hits">Хиты продаж</span>
+				<div class="row row_products">
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="product my-3 my-lg-0">
+							<p><a href="#">Масло после депиляции с лавандой и витамином Е "DELICA"</a></p>
+							<img src="pictures/product1.png" width="auto" height="160px" alt="">
+							<div class="rating-result">
+								<a href="#">
+								<span class="active"></span>	
+								<span class="active"></span>    
+								<span class="active"></span>  
+								<span class="active"></span>    
+								<span class="active"></span>
+								</a>
+							</div>
+							<p><span class="price">180</span><span class="currency">грн</span><span class="ml-3 oldprice">215</span></p>
+							<form action="#">
+								<label>Кол-во <input type="number" min="1" placeholder="1" required class="input_number"></label>
+								<input type="submit" value="Купить" class="button_buy ml-3">
+							</form>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="product product my-3 my-lg-0">
+							<p><a href="#">Масло после депиляции с лавандой и витамином Е "DELICA"</a></p>
+							<img src="pictures/product2.png" width="auto" height="160px" alt="">
+							<div class="rating-result">
+								<a href="#">
+									<span class="active"></span>	
+									<span class="active"></span>    
+									<span class="active"></span>  
+									<span class="active"></span>    
+									<span></span>
+								</a>
+							</div>
+							<p><span class="price">180</span><span class="currency">грн</span><span class="ml-3 oldprice">215</span></p>
+							<form action="#">
+								<label>Кол-во <input type="number" min="1" placeholder="1" required class="input_number"></label>
+								<input type="submit" value="Купить" class="button_buy ml-3">
+							</form>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="product product my-3 my-lg-0">
+							<p><a href="#">Масло после депиляции с лавандой и витамином Е "DELICA"</a></p>
+							<img src="pictures/product3.png" width="auto" height="160px" alt="">
+							<div class="rating-result">
+								<a href="#">
+									<span class="active"></span>	
+									<span class="active"></span>    
+									<span class="active"></span>  
+									<span></span>    
+									<span></span>
+								</a>
+							</div>
+							<p><span class="price">180</span><span class="currency">грн</span><span class="ml-3 oldprice">215</span></p>
+							<form action="#">
+								<label>Кол-во <input type="number" min="1" placeholder="1" required class="input_number"></label>
+								<input type="submit" value="Купить" class="button_buy ml-3">
+							</form>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="product product my-3 my-lg-0">
+							<p><a href="#">Масло после депиляции с лавандой и витамином Е "DELICA"</a></p>
+							<img src="pictures/product4.png" width="auto" height="160px" alt="">
+							
+								<div class="rating-result">
+									<a href="#">
+										<span class="active"></span>	
+										<span class="active"></span>    
+										<span></span>  
+										<span></span>    
+										<span></span>
+									</a>
+								</div>
+
+							<p><span class="price">180</span><span class="currency">грн</span><span class="ml-3 oldprice">215</span></p>
+							<form action="#">
+								<label>Кол-во <input type="number" min="1" placeholder="1" required class="input_number"></label>
+								<input type="submit" value="Купить" class="button_buy ml-3">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>          
+
+		<section>
+			<div class="container text-center container_new my-5">
+				<span class="new">Новинки</span>
+				<div class="row row_products">
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="product product my-3 my-lg-0">
+							<p><a href="#">Масло после депиляции с лавандой и витамином Е "DELICA"</a></p>
+							<img src="pictures/product1.png" width="auto" height="160px" alt="">
+							<div class="rating-result">
+								<a href="#">
+								<span class="active"></span>	
+								<span class="active"></span>    
+								<span class="active"></span>  
+								<span class="active"></span>    
+								<span class="active"></span>
+								</a>
+							</div>
+							<p><span class="price">180</span><span class="currency">грн</span><span class="ml-3 oldprice">215</span></p>
+							<form action="#">
+								<label>Кол-во <input type="number" min="1" placeholder="1" required class="input_number"></label>
+								<input type="submit" value="Купить" class="button_buy ml-3">
+							</form>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="product product my-3 my-lg-0">
+							<p><a href="#">Масло после депиляции с лавандой и витамином Е "DELICA"</a></p>
+							<img src="pictures/product2.png" width="auto" height="160px" alt="">
+							<div class="rating-result">
+								<a href="#">
+									<span class="active"></span>	
+									<span class="active"></span>    
+									<span class="active"></span>  
+									<span class="active"></span>    
+									<span></span>
+								</a>
+							</div>
+							<p><span class="price">180</span><span class="currency">грн</span><span class="ml-3 oldprice">215</span></p>
+							<form action="#">
+								<label>Кол-во <input type="number" min="1" placeholder="1" required class="input_number"></label>
+								<input type="submit" value="Купить" class="button_buy ml-3">
+							</form>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="product product my-3 my-lg-0">
+							<p><a href="#">Масло после депиляции с лавандой и витамином Е "DELICA"</a></p>
+							<img src="pictures/product3.png" width="auto" height="160px" alt="">
+							<div class="rating-result">
+								<a href="#">
+									<span class="active"></span>	
+									<span class="active"></span>    
+									<span class="active"></span>  
+									<span></span>    
+									<span></span>
+								</a>
+							</div>
+							<p><span class="price">180</span><span class="currency">грн</span><span class="ml-3 oldprice">215</span></p>
+							<form action="#">
+								<label>Кол-во <input type="number" min="1" placeholder="1" required class="input_number"></label>
+								<input type="submit" value="Купить" class="button_buy ml-3">
+							</form>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="product product my-3 my-lg-0">
+							<p><a href="#">Масло после депиляции с лавандой и витамином Е "DELICA"</a></p>
+							<img src="pictures/product4.png" width="auto" height="160px" alt="">
+							
+								<div class="rating-result">
+									<a href="#">
+										<span class="active"></span>	
+										<span class="active"></span>    
+										<span></span>  
+										<span></span>    
+										<span></span>
+									</a>
+								</div>
+
+							<p><span class="price">180</span><span class="currency">грн</span><span class="ml-3 oldprice">215</span></p>
+							<form action="#">
+								<label>Кол-во <input type="number" min="1" placeholder="1" required class="input_number"></label>
+								<input type="submit" value="Купить" class="button_buy ml-3">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> 
+
+		<section class="container-fluid text-center fluid_feedback">
+			<span class="feedback">Отзывы</span>
+			<div class="container">
+				<div class="owl-carousel owl-theme owl-feedback">
+					<div class="item item_feedback">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga amet quae eius nobis expedita. Soluta tempora veniam temporibus consequuntur. Maxime reiciendis tempore, animi doloribus voluptate necessitatibus. Illum, doloremque tenetur.
+						<p>Лилия Таран</p>
+					</div>
+					<div class="item item_feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, eius veniam aut magni, aliquid alias recusandae laudantium, consectetur dignissimos enim similique quibusdam molestiae non facere officiis nobis nam sequi.
+						<p>Лилия Таран</p>
+					</div>
+					<div class="item item_feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptas magnam illo officiis, beatae molestiae ab libero dolore cum excepturi laboriosam repellendus doloremque ex eius quos veniam dolorum, aliquam tempora?
+						<p>Лилия Таран</p>
+					</div>
+					<div class="item item_feedback">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi voluptatem quo delectus, voluptates id dolore quia excepturi fugiat exercitationem maiores. Perferendis beatae, labore amet possimus ratione in et voluptatibus asperiores.
+						<p>Лилия Таран</p>
+					</div>
+					<div class="item item_feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quos debitis ullam, inventore pariatur veritatis dolor iure id, maxime a quibusdam numquam dolore. Magnam in iusto a eveniet laborum soluta?
+						<p>Лилия Таран</p>
+					</div>
+					<div class="item item_feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facere est esse possimus sit. Molestiae ratione iusto iste quae eum? Sunt, distinctio ad. Obcaecati quod ipsa sunt provident veniam? Voluptas?
+						<p>Лилия Таран</p>
+					</div>
+					<div class="item item_feedback">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio repellat asperiores temporibus atque sit ducimus possimus quaerat dolor vitae! Id tempora odio sapiente maiores harum accusamus voluptatibus officiis nulla rem!	
+						<p>Лилия Таран</p>
+					</div>
+					<div class="item item_feedback">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi iusto laudantium expedita culpa, consequuntur, explicabo cum molestias adipisci natus maiores dolores dignissimos hic corporis repellendus ex omnis, incidunt assumenda nobis.
+						<p>Лилия Таран</p>
+					</div>
+					<div class="item item_feedback">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum neque labore nihil quibusdam corrupti, fugit aut quas porro corporis blanditiis maiores, eligendi sint impedit laborum soluta aliquid, et mollitia velit?
+						<p>Лилия Таран</p>
+					</div>
+					<div class="item item_feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cum consectetur quibusdam voluptatibus? Consectetur dolores, obcaecati debitis nemo saepe neque quisquam in, illo distinctio earum veniam quasi laborum at qui.
+						<p>Лилия Таран</p>
+					</div>
+					<div class="item item_feedback">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, enim exercitationem, nesciunt delectus eum est labore excepturi accusantium laudantium minus ad dolor fugit porro! Voluptatem assumenda reprehenderit sed culpa similique!
+						<p>Лилия Таран</p>
+					</div>
+					<div class="item item_feedback">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et laborum, minus repudiandae animi repellat minima esse! Exercitationem nemo quod commodi? Qui impedit sapiente, deserunt perspiciatis ut sint minus asperiores! Libero.
+						<p>Лилия Таран</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<main class="container-fluid text-center fluid_about_us position-relative">
+			<div class="container">
+				<span class="about_us">О компании</span>
+				<div class="owl-carousel owl-theme owl-about-us col-12 col-lg-8 text-left">
+					<div class="item item_about_us">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio autem hic dignissimos itaque, ducimus repellat ad cumque perspiciatis, cupiditate nostrum tempora beatae adipisci voluptates placeat laudantium nobis. Quisquam, deleniti fugiat?</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore corrupti ratione repudiandae similique excepturi dolor voluptatum eligendi</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, eius veniam aut magni, aliquid alias recusandae laudantium, consectetur dignissimos enim similique quibusdam molestiae non facere officiis nobis nam sequi.</p>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic quasi praesentium rerum quisquam officiis architecto tempora</p>
+					</div>
+					<div class="item item_about_us">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, eius veniam aut magni, aliquid alias recusandae laudantium, consectetur dignissimos enim similique quibusdam molestiae non facere officiis nobis nam sequi.</p>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic quasi praesentium rerum quisquam officiis architecto tempora</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio autem hic dignissimos itaque, ducimus repellat ad cumque perspiciatis, cupiditate nostrum tempora beatae adipisci voluptates placeat laudantium nobis. Quisquam, deleniti fugiat?</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore corrupti ratione repudiandae similique excepturi dolor voluptatum eligendi</p>
+					</div>
+					<div class="item item_about_us">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio autem hic dignissimos itaque, ducimus repellat ad cumque perspiciatis, cupiditate nostrum tempora beatae adipisci voluptates placeat laudantium nobis. Quisquam, deleniti fugiat?</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore corrupti ratione repudiandae similique excepturi dolor voluptatum eligendi</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, eius veniam aut magni, aliquid alias recusandae laudantium, consectetur dignissimos enim similique quibusdam molestiae non facere officiis nobis nam sequi.</p>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic quasi praesentium rerum quisquam officiis architecto tempora</p>
+						
+					</div>
+					<div class="item item_about_us">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio autem hic dignissimos itaque, ducimus repellat ad cumque perspiciatis, cupiditate nostrum tempora beatae adipisci voluptates placeat laudantium nobis. Quisquam, deleniti fugiat?</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore corrupti ratione repudiandae similique excepturi dolor voluptatum eligendi</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, eius veniam aut magni, aliquid alias recusandae laudantium, consectetur dignissimos enim similique quibusdam molestiae non facere officiis nobis nam sequi.</p>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic quasi praesentium rerum quisquam officiis architecto tempora</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="container-fluid fluid_footer">
+			<div class="container">
+				<div class="row">
+				<div class="col-6 col-lg-3">
+					<span class="span_footer">Каталог товаров</span>
+					<ul class="catalog_footer">
+						<li><a href="#">Маникюр и педикюр</a></li>
+						<li><a href="#">Парикмахерское искусство</a></li>
+						<li><a href="#">Все для депиляции</a></li>
+						<li><a href="#">Ресницы</a></li>
+						<li><a href="#">Хна для росписи тела</a></li>
+						<li><a href="#">Оборудование</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-lg-3">
+					<span class="span_footer">Покупателям</span>
+					<ul class="customers">
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Сервис и гарантия</a></li>
+						<li><a href="#">Программа лояльности</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-lg-3 contacts_footer">
+					<span class="span_footer">Контакты</span>
+						<div class="adress">пр-т Гагарина 41/2, г.Харьков </div>	
+						<div class="mail">vfon@ukr.net</div>	
+						<div class="tel">
+							<p>+380 (96) 569-93-25</p>
+							<p>+380 (63) 051-63-76</p>	
+							<p>+380 (95) 800-49-95</p>
+						</div>	
+						<div class="shedule">
+							<p>Пн-пт 9:00-18:00</p>	
+							<p>Сб 10:00-16:00</p>	
+							<p>Вс выходной</p>
+						</div>
+							
+					
+				</div>
+				<div class="col-6 col-lg-3">
+					<span class="span_footer">Социальные сети</span>
+					<ul class="social row">
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+			
+				</div>
+			</div>
+			</div>
+			
+		</footer> 
+		<div class="container-fluid my-3">
+			<div class="container text-center">© 2016  All rights reserved.</div>
+		</div>
+
+
+
+
+		<script>
+			$('.owl-main').owlCarousel({
+    		loop:true,
+   			margin:0,
+    		nav:false,
+			autoplay:true,
+			items:1,
+			dots:false,
+})
+		
+
+		$('.owl-feedback').owlCarousel({
+   		 	loop:true,
+    		margin:10,
+   			nav:true,
+			dots:false,
+			navText: [
+          '<div class="arrow arrow_previous">',
+          '<div class="arrow arrow_next">'
+        ],
+    		responsive:{
+       		 0:{
+            items:1
+        		},
+       		 576:{
+            items:2
+        		},
+       		 992:{
+           items:3
+       	 }
+    	}
+})
+$('.owl-about-us').owlCarousel({
+    		loop:true,
+   			margin:0,
+    		nav:true,
+			autoplay:false,
+			items:1,
+			dots:false,
+			navText: [
+          '<div class="arrow arrow_previous arrow_previous_about">',
+          '<div class="arrow arrow_next arrow_next_about">'
+        ],
+})
+		</script>
+	</body>
+</html>
